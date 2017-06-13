@@ -65,12 +65,12 @@ function campo1si() {
                 campo1 = document.getElementById("nombre").value;
                 if( campo1 == null || campo1.length == 0 || /^\s+$/.test(campo1) ) 
                     {
-                        campo1si.innerHTML="<h5>El campo Nombre es obligatorio</h5>";
+                        campo1si.innerHTML="<h5>'Nombre' es obligatorio</h5>";
                         return false;
                 }
                 else 
                     {   
-                        campo1si.innerHTML="<p>Correcto</P>";
+                        campo1si.innerHTML="<p><i class='fa fa-thumbs-o-up fa-lg' aria-hidden='true'></i></P>";
                     }
 }
    
@@ -80,12 +80,12 @@ function campo2si() {
                 campo2 = document.getElementById("telefon").value;
                 if( isNaN(campo2) || campo2 > 999999999 || campo2 < 100000000)  
                     {
-                        camp24si.innerHTML="<h5>En Teléfono es  invalido</h5>";
+                        camp2si.innerHTML="<h5>En Teléfono es  invalido</h5>";
                         return false;
                 }
                 else 
                     {
-                        campo2si.innerHTML="<p>Correcto</P>";
+                        campo2si.innerHTML="<p><i class='fa fa-thumbs-o-up fa-lg' aria-hidden='true'></i></P>";
                     }
 
 }
@@ -102,7 +102,7 @@ function campo3si() {
                 }
                 else 
                     {
-                        campo3si.innerHTML="<p>Correcto</P>";
+                        campo3si.innerHTML="<p><i class='fa fa-thumbs-o-up fa-lg' aria-hidden='true'></i></P>";
                     }
 }
 
@@ -117,7 +117,7 @@ function campo4si() {
                 }
                 else 
                     {
-                        campo4si.innerHTML="<p>Correcto</P>";
+                        campo4si.innerHTML="<p><i class='fa fa-thumbs-o-up fa-lg' aria-hidden='true'></i></P>";
                     } 
 }
 
@@ -132,3 +132,8 @@ function myMap() {
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
 
+
+/*Cierre Modalbox */
+function myModal(){
+    document.getElementById("id01").style.display="none";
+}
