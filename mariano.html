@@ -61,7 +61,9 @@
 	<aside class="aside">
 		<div class="summary" id="serv">
 			<h2>Summary</h2>
-			<p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". </p>
+			<p>Starting a new career in <strong>Web Developement</strong>. I have joined a <strong>Profecional Certification</strong> in Front-End Developement, and now I keep learning as much  as I can to grow and develop my skills.<br><br>
+		    I am <strong>highly motivated, effective, enthusiastic and hard working person</strong> with an entrepreneurial mind-set. I am a fast learner with ability to solve problems and perform in challenging and high stress working environments. I work effectively either independently or as part of a team.<br><br>
+			I consider myself as a focus oriented person, able to identify new business opportunities. <strong>Due to my 10 years experience in sales and financial management, I have a proven track record in Management, Customer Service and Sales roles.</strong> </p>
 			<br>
 			<p>
 				<a href="https://www.linkedin.com/in/mariano-cufr%C3%A9-aa782b3a/" target="_blanck"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
@@ -128,7 +130,7 @@
 	<article class="article">
 		<h2>Contacto</h2>
 		<div class="fl">
-			<form id="form" class="formulario">
+			<form action="insertar_email.php" method="post" id="form" class="formulario">
 				<label>Nombre</label>
 				<div id="campo1si"></div>
 				<input type='text' name="nombre" id="nombre" onblur="return campo1si();">
@@ -143,13 +145,13 @@
 	            <div id="campo3si"></div>
 				
 				<label>Mensaje</label>
-				<textarea></textarea>
+				<textarea type='text' name="mensaje" id="mensaje"></textarea>
 				
-				<label id="cond">He leido y acepto los términos y condiciones</label>
+				<label id="cond">He leido y acepto los <a href="">términos y condiciones</a></label>
 	            <input type='checkbox' name="marcar" id="marcar"  onblur="return campo4si();">
 	            <div id="campo4si"></div>
 				
-				<button class="hablamos centro">Enviar</button>
+				<button  class="hablamos centro">Enviar</button>
 			</form>
 
 			<div id="map">
@@ -159,6 +161,33 @@
 		</div>
 		
 	</article>
+
+
+	<!-- Caja Modal - suscribirse -->
+
+	<div id="id01" class="modal">
+	  	<div class="modal-dialog">
+	    	<div class="modal-content">
+		      <header class="container-modal"> 
+		        <a onclick="myModal()" href="#" class="closebtn">×</a>
+		        <h2>Suscríbete</h2>
+		      </header>
+		      <div class="container-modal">
+		        <h2></h2>
+				    <p>Si deseas suscribirte, indica tu correo electrónico a continuación, y recibirás descuentos y promociones antes que nadie.</p>
+				    <form class="modal-form" action="insertar_email.php" method="post" name="formname" >
+				    	<input type="name" name="name" placeholder="Nombre"/>
+				    	<input type="email" name="email" placeholder="Email"/>
+
+				      <input type="submit" value="Enviar"/>
+				    </form>
+		      </div>
+		      <footer class="container-modal">
+		        <p><strong>Gracias por suscribirte!</strong></p>
+		      </footer>
+	    	</div>
+	 	 </div>
+	</div>
 
 	
 	<footer class="footer">Copyright - Mariano Cufré Delgado - 2017  <a href="">    Pilítica de privacidad</a></footer>
